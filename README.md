@@ -16,6 +16,11 @@
 1. (1 mark) Report the name of measurement tool used in your measurements (you are free to choose *any* open source measurement software as long as it can measure CPU and memory performance). Please describe your configuration of the measurement tool, and explain why you set such a value for each parameter. Explain what the values obtained from measurement results represent (e.g., the value of your measurement result can be the execution time for a scientific computing task, a score given by the measurement tools or something else).
 
     > Phoronix Test Suite,
+    1. Test parameters are set to the default values provided by Phoronix Test Suite
+    2. The CPU test uses the 7-zip compression algorithm to measure CPU performance, and the memory test uses the RAMSpeed benchmark to measure memory performance (Type: Copy - Benchmark: Integer).
+    3. The results of the tests are usually presented in the form of scores, with higher scores meaning better CPU performance. The results obtained from memory tests are usually presented in terms of read and write speeds (in MB/s, higher scores mean better read and write speeds).
+
+Translated with DeepL.com (free version)
 
 2. (1 mark) Run your measurement tool on general purpose `t2.micro`, `t2.medium`, and `c5d.large` Linux instances, respectively, and find the performance differences among these instances. Launch all the instances in the **US East (N. Virginia)** region. Does the performance of EC2 instances increase commensurate with the increase of the number of vCPUs and memory resource?
 
